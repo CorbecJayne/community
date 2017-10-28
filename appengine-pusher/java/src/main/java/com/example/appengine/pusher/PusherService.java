@@ -20,11 +20,11 @@ import com.pusher.rest.Pusher;
 
 public abstract class PusherService {
 
-  public static final String APP_KEY = System.getenv("5b78c6c2532a9d39ff12");
-  public static final String CLUSTER = System.getenv("eu");
+  public static final String APP_KEY = System.getenv("PUSHER_APP_KEY");
+  public static final String CLUSTER = System.getenv("PUSHER_CLUSTER");
 
-  private static final String APP_ID = System.getenv("422541");
-  private static final String APP_SECRET = System.getenv("d4d6fc207a7aef4446b3");
+  private static final String APP_ID = System.getenv("PUSHER_APP_ID");
+  private static final String APP_SECRET = System.getenv("PUSHER_APP_SECRET");
 
   private static Pusher instance;
 
